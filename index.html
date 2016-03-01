@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js!</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("h1").click(function(){
+
+          $("div").addClass("scare");
+
+        });
+
+        $("h2").click(function(){
+          $("div").removeClass("scare");
+
+        })
+
+      });
+    </script>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png");
+        background-position: center;
+        background-size: contain;
+        background-color: red;
+      }
+      .fancy {
+        border: 1px solid orange ;
+      }
+
+      .happy {
+        background-image: image();
+      }
+      .sad {
+        background-image: image();
+      }
+      .scare{
+        width: 300px;
+        height: 300px;
+        background-image: url("https://i.ytimg.com/vi/AhtJAKThMUc/hqdefault.jpg");
+        background-position: center;
+        background-size: contain;
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Show the content</h1>
+    <h2>hide the content</h2>
+    <section class="secret">
+
+      <div> hi</div>
+    </section>
+
+  </body>
+</html>
