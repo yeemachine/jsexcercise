@@ -15,11 +15,12 @@
         });
 
         $("h2").click(function(){
+          confirm("Are you sure?");
+          alert("Too late");
           $("div").addClass("scare");
           $("body").addClass("black");
-
-
           $("div").removeClass("happy");
+          alert("Boo");
 
         });
         $("p").click(function(){
@@ -99,8 +100,8 @@
 
 
       .scare{
-        width: 500px;
-        height: 500px;
+        width: 900px;
+        height: 900px;
         background-image: url("Smileyscary.svg.png");
         background-position: center;
         background-size: contain;
