@@ -8,25 +8,35 @@
 
         $("h1").click(function(){
 
-          $("div").addClass("scare");
+          $("div").addClass("happy");
+          $("div").removeClass("scare");
 
         });
 
         $("h2").click(function(){
-          $("div").removeClass("scare");
+          $("div").addClass("scare");
+          $("div").removeClass("happy");
 
         })
 
       });
     </script>
     <style>
-      div {
-        width: 300px;
-        height: 300px;
+        div{
+
+      width: 500px;
+      height: 500px;
+      background-image: url("Smileyneutral.svg.png");
+      background-position: center;
+      background-size: contain;
+    }
+      .happy{
+
+        width: 500px;
+        height: 500px;
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png");
         background-position: center;
         background-size: contain;
-        background-color: red;
       }
       .fancy {
         border: 1px solid orange ;
@@ -39,20 +49,19 @@
         background-image: image();
       }
       .scare{
-        width: 300px;
-        height: 300px;
-        background-image: url("https://i.ytimg.com/vi/AhtJAKThMUc/hqdefault.jpg");
+        width: 500px;
+        height: 500px;
+        background-image: url("Smileyscary.svg.png");
         background-position: center;
         background-size: contain;
-        background-color: red;
       }
 
     </style>
   </head>
   <body>
 
-    <h1>Show the content</h1>
-    <h2>hide the content</h2>
+    <h1>Make him happy</h1>
+    <h2>Make him sad</h2>
     <section class="secret">
 
       <div> hi</div>
