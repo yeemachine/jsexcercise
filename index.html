@@ -10,20 +10,78 @@
 
           $("div").addClass("happy");
           $("div").removeClass("scare");
+          $("body").removeClass("black");
 
         });
 
         $("h2").click(function(){
           $("div").addClass("scare");
+          $("body").addClass("black");
+
+
           $("div").removeClass("happy");
 
+        });
+        $("p").click(function(){
+          $("div").removeClass("scare");
+          $("div").removeClass("happy");
+          $("body").removeClass("black");
+
         })
+
 
       });
     </script>
     <style>
-        div{
+    *{
+      font-family: futura, sans-serif;
+      font-size: 20px;
+      text-align: center;
+    }
+    h1{
+      width:250px;
+     height:50px;
+     font-weight: bold;
+     background-color: yellow;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     border-radius: 20px;
+    }
+    h2{
+      width:250px;
+     height:50px;
+     font-weight: bold;
+     background-color: yellow;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     border-radius: 20px;
 
+    }
+    p{
+      width:250px;
+      height:50px;
+      font-weight: bold;
+      background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      border-radius: 20px;
+
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      margin-top: 80px;
+      font-size: 20px;
+    }
+    div{
       width: 500px;
       height: 500px;
       background-image: url("Smileyneutral.svg.png");
@@ -38,16 +96,8 @@
         background-position: center;
         background-size: contain;
       }
-      .fancy {
-        border: 1px solid orange ;
-      }
 
-      .happy {
-        background-image: image();
-      }
-      .sad {
-        background-image: image();
-      }
+
       .scare{
         width: 500px;
         height: 500px;
@@ -55,17 +105,20 @@
         background-position: center;
         background-size: contain;
       }
+      .black{
+        background-color: black;
+      }
 
     </style>
   </head>
   <body>
 
-    <h1>Make him happy</h1>
-    <h2>Make him sad</h2>
-    <section class="secret">
 
-      <div> hi</div>
-    </section>
+    <div> </div>
+    <h1>Make Him happy</h1>
+    <h2>Make Him sad</h2>
+    <p>Walk Away</p>
+
 
   </body>
 </html>
